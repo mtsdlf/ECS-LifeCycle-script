@@ -1,6 +1,6 @@
-package com.huaweiar.ecs.resources;
+package com.huawei.ar.Proyecto_Wizard.Resources;
 
-public class Environment {
+public class EnvironmentGetter {
 	private static String projectId = System.getenv("PROJECT_ID");
 	private static String region = System.getenv("REGION");
 	private static String accountName = System.getenv("ACCOUNT_NAME");
@@ -10,11 +10,11 @@ public class Environment {
 	private static String tagKey = System.getenv("TAG_KEY");
 	private static String tagValue = System.getenv("TAG_VALUE");
 
-	private static Environment instance = null;
+	private static EnvironmentGetter instance = null;
 	
-	private static Environment getInstance() {
+	private static EnvironmentGetter getInstance() {
 		if (instance == null)
-			instance = new Environment();
+			instance = new EnvironmentGetter();
 		
 		return instance;
 	}

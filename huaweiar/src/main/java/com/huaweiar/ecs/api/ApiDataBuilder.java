@@ -9,8 +9,8 @@ import com.huaweiar.ecs.resources.Environment;
 public class ApiDataBuilder {
 	
 	final String tokenUrl = "https://iam.myhuaweicloud.com/v3/auth/tokens";
-
-	final String tagsUrl = "https://ecs."+Environment.getRegion()+".myhuaweicloud.com/v1/"+Environment.getProjectId()+"/cloudservers/detail?tags="+Environment.getTagKey()+"="+Environment.getTagValue();
+ 
+	final String tagsUrl = "https://ecs."+Environment.getRegion()+".myhuaweicloud.com/v1/"+Environment.getProjectId()+"/ "+Environment.getTagKey()+"="+Environment.getTagValue();
 
 	final String ecsUrl = "https://ecs."+Environment.getRegion()+".myhuaweicloud.com/v1/"+Environment.getProjectId()+"/cloudservers/action";
 

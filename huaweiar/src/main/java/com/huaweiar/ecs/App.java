@@ -32,7 +32,6 @@ public class App {
 		HttpResponse<String> response = changeStateEcsList(getEcsListByTag());
 		System.out.println(response.body());
 	}
-
 	public static ArrayList<String> getEcsListByTag() {
 		ArrayList<String> resourceIdList = new ArrayList<String>();
 		Integer i = 0;
